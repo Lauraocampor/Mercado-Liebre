@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+body {
+    background-color: var(--grisClaro);
+    color: var(--grisOscuro);
+    font-size: 12px;
+    margin-left: auto;
+    text-align: center;
+}
+header{
+    background-color: var(--amarillo);
+    padding-bottom: 50px;    
+}
+nav{
+    text-align: left;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 16px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16pxboris
+}
+.burger-menu{
+    font-size: 2em;
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+    padding: 10px;
+    width: fit-content;
+    display: inline;
+    border-radius: 20%;
+}
+.banner{
+    background-size: auto;
+}
+footer{
+    background-color: white;
+    padding: 50px;
+}
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--azul);
+}
+.copyright{
+    text-align: left;
+}
