@@ -131,7 +131,6 @@ footer i{
 
 @media (min-width: 768px) {
     .header-bar__top{
-        border: dotted 2px red;
         display: flex;
         justify-content: space-between;
     }
@@ -142,7 +141,47 @@ footer i{
     .burger-menu{
         display: none;
     }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar li{
+        margin: 0 5px;
+    }
     .main-article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo{
+        width: 250px;
+    }
+    .header-bar__top,
+    .navbar{
+        max-width: 1200px;
+        border: dotted 2px red;
+        margin: auto;
+    }
+    .header-bar__top{
+        align-items: center;
+    }
+    .header-titulo{
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .navbar{
+        margin-top: 40px;
+    }
+    .navbar li{
+        margin: 0 10px;
+    }
+    .navbar a{
+        font-size: 19px;
     }
 }
