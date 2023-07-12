@@ -40,6 +40,54 @@
         
     </header>
     <main>
+        <form class="form-register" action="/MERCADO LIEBRE/views/home.html" method="post">
+
+            <h2 class="form-register__titulo">Datos personales</h2>
+            <div class="form-register__caja">
+                <input type="text" min="2" name="nombre-completo" placeholder="Nombre y apellido" required>
+            </div>
+            <div class="form-register__caja">
+                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="form-register__caja">
+                <input type="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-register__caja">
+                <input type="password" name="password" placeholder="****" required>
+            </div>
+            <div class="form-register__caja">
+                <input type="password" name="password" placeholder="****" required>
+            </div>
+            <div class="form-register__caja">
+                <span>Imagen de perfil</span>
+                <br>
+                <input type="file" name="imagen" value="jpg"> 
+            </div>
+            <h2 class="form-register__titulo">Fecha de nacimiento</h2>
+            <div class="form-register__caja">
+                <input type="date" name="fecha" required>
+            </div>
+            <div class="form-register__caja">
+                <input type="text" name="domicilio" placeholder="Domicilio" required>
+            </div>
+            <h2 class="form-register__titulo">Perfil del usuario</h2>
+            <div class="form-register__perfil">
+                <input type="radio" name="domicilio" value="Comprador" checked><span>Comprador</span>
+                <input type="radio" name="domicilio" value="Vendedor"><span>Vendedor</span>
+            </div>
+            <h2 class="form-register__titulo">Intereses</h2>
+            <ul type="none" class="form-register__intereses">
+                <li class="intereses"><input type="checkbox" name="intereses" value="Electro"><label for="Electro">Electro</label></li>
+                <li class="intereses"><input type="checkbox" name="intereses" value="Moda"><label for="Moda">Moda</label></li>
+                <li class="intereses"><input type="checkbox" name="intereses" value="Hogar"><label>Hogar</label></li>
+                <li class="intereses"><input type="checkbox" name="intereses" value="Juguetería"><label for="Juguetería">Juguetería</label></li>
+                <li class="intereses"><input type="checkbox" name="intereses" value="Vida sana"><label for="Vida sana">Vida sana</label></li>
+            </ul>
+            <div class="form-register__buttons">
+                <button type="reset">Borrar</button>
+                <button type="submit"><a href="home.html"></a>Enviar</button>
+            </div>
+        </form>
 
     </main>
     <footer>

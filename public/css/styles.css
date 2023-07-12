@@ -180,6 +180,55 @@ footer i{
     padding: 5px 20px;
 }
 
+/* FORMULARIO REGISTER */
+.form-register{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+}
+.form-register__titulo{
+    padding-top: 5px;
+}
+.form-register__caja,
+.form-register__perfil,
+.form-register__intereses{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.form-register__caja input{
+    width: 100%;
+    margin-top: 10px;
+}
+.form-register__perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.intereses input,
+.intereses label{
+    display: inline;
+}
+.intereses label{
+    padding-left: 10px;
+}
+.form-register__buttons{
+    display: flex;
+    flex-direction: column;
+}
+.form-register__buttons button{
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--celeste);
+    border: none;
+    margin-top: 10px;
+}
+
+
+
 @media (min-width: 361px) {
     .header-bar__top{
         display: flex;
@@ -228,6 +277,10 @@ footer i{
     }
     .main-contenedor__titulo{
         display: flex;
+    }
+    /* FORMULARIO REGISTER */
+    .form-register{
+        max-width: 400px;
     }
 }
 
