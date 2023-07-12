@@ -230,8 +230,33 @@ footer i{
     margin-top: 10px;
 }
 
-
-
+/* FORMULARIO LOGIN */
+.form-login{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+}
+.form-login__caja input{
+    width: 100%;
+    margin-top: 10px;
+    border: 0;
+    height: 24px;
+    padding: 5px;
+}
+.form-login__button{
+    display: flex;
+    flex-direction: column;
+}
+.form-login__button button{
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--celeste);
+    border: none;
+    margin-top: 10px;
+}
 @media (min-width: 361px) {
     .header-bar__top{
         display: flex;
@@ -285,6 +310,10 @@ footer i{
     .form-register{
         max-width: 400px;
     }
+    /* FORMULARIO LOGIN */
+    .form-login{
+        max-width: 400px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -322,5 +351,10 @@ footer i{
         flex-direction: row;
         align-items: stretch;
         justify-content: space-between;
+    }
+
+    /* FORMULARIO LOGIN */
+    .form-login{
+        padding-bottom: 125px;
     }
 }
