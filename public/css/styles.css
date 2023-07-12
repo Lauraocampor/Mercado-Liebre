@@ -13,6 +13,7 @@
     --grisOscuro: #666;
     --grisClaro: #ebebeb;
     --verde: #39b54a;
+    --azulRey: #0022AA;
 }
 body {
     background-color: var(--grisClaro);
@@ -118,6 +119,12 @@ body {
     flex-direction: column;
     margin: 10px 0;
 }
+.main-article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.main-article:hover .main-contenedor__titulo{
+    display: block;
+}
 .main-article__contenedor{
     border-top: solid var(--grisClaro) 2px;
     background-color: white;
@@ -137,6 +144,10 @@ body {
     right: 20px;
     top: -15px;
     position: absolute;
+}
+.main-article__contenedor i:hover{
+    transform: rotate(-90deg);
+    transition: all 600ms;
 }
 .main-contenedor__numeros{
     display: flex;  
@@ -170,11 +181,12 @@ body {
     padding-bottom: 10px;
     padding: 20px;
 }
-footer i{
+.footer i{
     font-size: 2em;
     color: var(--celeste);
     margin-bottom: 10px;
 }
+
 .footer-copyright{
     text-align: left;
     padding: 5px 20px;
@@ -229,6 +241,10 @@ footer i{
     border: none;
     margin-top: 10px;
 }
+.form-register__buttons button:hover{
+    background-color: var(--azulRey);
+    transition: all 450ms;    
+}
 
 /* FORMULARIO LOGIN */
 .form-login{
@@ -256,6 +272,10 @@ footer i{
     background-color: var(--celeste);
     border: none;
     margin-top: 10px;
+}
+.form-login__button button:hover{
+    background-color: var(--azulRey);
+    transition: all 450ms;
 }
 @media (min-width: 361px) {
     .header-bar__top{
@@ -299,12 +319,22 @@ footer i{
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .main-login{
+        padding-bottom: 50px;
+    }
     .main-article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40vw;
     }
     .main-contenedor__titulo{
         display: flex;
+    }
+    .footer{
+        width: 98vw;
+        padding: 0;
+    }
+    .footer-section{
+        padding: 20px 40px;
     }
     /* FORMULARIO REGISTER */
     .form-register{
@@ -352,7 +382,13 @@ footer i{
         align-items: stretch;
         justify-content: space-between;
     }
-
+    .footer-section{
+        padding: 20px 10px;
+    }
+    .footer i:hover{
+        color: var(--azulRey);
+        transition: all 450ms;
+    }
     /* FORMULARIO LOGIN */
     .form-login{
         padding-bottom: 125px;
