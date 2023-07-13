@@ -122,9 +122,6 @@ body {
 .main-article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-.main-article:hover .main-contenedor__titulo{
-    display: block;
-}
 .main-article__contenedor{
     border-top: solid var(--grisClaro) 2px;
     background-color: white;
@@ -165,6 +162,9 @@ body {
     display: none;
     padding-top: 20px;
 }
+.main-article:hover .main-contenedor__titulo{
+    display: block;
+}
 
 
 /* FOOTER */
@@ -185,6 +185,10 @@ body {
     font-size: 2em;
     color: var(--celeste);
     margin-bottom: 10px;
+}
+.footer i:hover{
+    color: var(--azulRey);
+    transition: all 450ms;
 }
 
 .footer-copyright{
@@ -384,10 +388,6 @@ body {
     }
     .footer-section{
         padding: 20px 10px;
-    }
-    .footer i:hover{
-        color: var(--azulRey);
-        transition: all 450ms;
     }
     /* FORMULARIO LOGIN */
     .form-login{
