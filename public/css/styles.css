@@ -122,6 +122,10 @@ body {
 .main-article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+.main-article:hover i{
+    transform: rotate(-90deg);
+    transition: all 600ms;
+}
 .main-article__contenedor{
     border-top: solid var(--grisClaro) 2px;
     background-color: white;
@@ -141,10 +145,6 @@ body {
     right: 20px;
     top: -15px;
     position: absolute;
-}
-.main-article__contenedor i:hover{
-    transform: rotate(-90deg);
-    transition: all 600ms;
 }
 .main-contenedor__numeros{
     display: flex;  
@@ -327,14 +327,10 @@ body {
         padding-bottom: 50px;
     }
     .main-article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40vw;
     }
-    .main-contenedor__titulo{
-        display: flex;
-    }
     .footer{
-        width: 98vw;
+        width: 100vw;
         padding: 0;
     }
     .footer-section{
