@@ -390,9 +390,3 @@ body {
         padding-bottom: 125px;
     }
 }
-
-@media (min-width:1000) {
-    .main-banner__imagen{
-        height: 10%;
-    }
-}
